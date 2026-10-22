@@ -5,5 +5,9 @@ MySQL 8.4（原生 RPM）/ 5.7（Podman 容器）一键部署工具，面向 Cen
 ## 🚀 快速开始
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/FZDNSZYT/mysql-manager/main/bootstrap.sh \
-  | sudo bash -s -- --version 8.4 --root-password 'YourPwd' --allow-root-remote
+git clone https://github.com/FZDNSZYT/mysql-manager.git \
+chmod 777 mysql-manager \
+bash mysql-manager/install_mysql.sh \
+  --version 8.4 \
+  --root-password 'YourStr0ngPwd!2025' \
+  --allow-root-remote
